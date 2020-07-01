@@ -1,0 +1,14 @@
+.bg-dark{
+    background-color: red !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+a:hover{
+    background-color: blue;
+}
+
+.navbar-dark .navbar-nav  a:hover .nav-link{
+    color: blue;
+}
