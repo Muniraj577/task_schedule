@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 Route::resource('jobs', 'JobController');
+Route::resource('posts', 'PostController');
 Route::get('/category', 'CategoryController@index')->name('category.index');
 Route::post('/category/add', 'CategoryController@addCategory')->name('addCategory');
 Route::post('/subcategory/add', 'CategoryController@addSubCategories')->name('addSubCategory');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
